@@ -1,0 +1,32 @@
+﻿ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+  ≡ƒÄü GiftChain ΓÇö Deploying to sepolia
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+  Deployer: 0xd9DF913b84dd866521C8f153D5C34bD4F58B7CB1
+  Balance: 0.002619922968585354 ETH
+
+1/3  Deploying GiftNFT...
+node.exe : ProviderError: insufficient funds for 
+gas * price + value: balance 2619922968585354, tx 
+cost 16626127823791114, overshot 14006204855205760
+At C:\Program Files\nodejs\npx.ps1:29 char:3
++   & $NODE_EXE $NPX_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Provi 
+   derError: ...006204855205760:String) [], Remot  
+  eException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    at HttpProvider.request (C:\Users\Kalo Kharayo\
+Desktop\GiftChain\contracts\node_modules\hardhat\sr
+c\internal\core\providers\http.ts:116:21)
+    at processTicksAndRejections 
+(node:internal/process/task_queues:105:5)
+    at async HardhatEthersSigner.sendTransaction 
+(C:\Users\Kalo Kharayo\Desktop\GiftChain\contracts\
+node_modules\@nomicfoundation\hardhat-ethers\src\si
+gners.ts:185:18)
+    at async ContractFactory.deploy (C:\Users\Kalo 
+Kharayo\Desktop\GiftChain\contracts\node_modules\et
+hers\src.ts\contract\factory.ts:111:24)
+    at async main (C:\Users\Kalo Kharayo\Desktop\Gi
+ftChain\contracts\scripts\deploy.ts:23:19)
