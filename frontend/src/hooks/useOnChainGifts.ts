@@ -53,13 +53,13 @@ export function useOnChainGifts() {
         const listedLogs = await publicClient!.getLogs({
           address: MARKETPLACE_ADDRESS,
           event: parseAbiItem('event ItemListed(uint256 indexed listingId, address indexed seller, address indexed nftContract, uint256 tokenId, uint256 quantity, uint256 pricePerUnit)'),
-          fromBlock: 30000000n,
+          fromBlock: 34000000n,
         });
 
         const soldLogs = await publicClient!.getLogs({
           address: MARKETPLACE_ADDRESS,
           event: parseAbiItem('event ItemSold(uint256 indexed listingId, address indexed buyer, address indexed nftContract, uint256 tokenId, uint256 quantity, uint256 totalPrice)'),
-          fromBlock: 30000000n,
+          fromBlock: 34000000n,
         });
 
         const canceledLogs = await publicClient!.getLogs({

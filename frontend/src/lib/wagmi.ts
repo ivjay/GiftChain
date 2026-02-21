@@ -9,12 +9,12 @@ export const config = createConfig({
   ],
   transports: {
     [polygonAmoy.id]: fallback([
-      http('https://rpc-amoy.polygon.technology'),
+      http(import.meta.env.VITE_RPC_URL),
       http('https://polygon-amoy.drpc.org'),
       http('https://rpc.ankr.com/polygon_amoy'),
+      http('https://rpc-amoy.polygon.technology'),
       http('https://polygon-amoy-bor-rpc.publicnode.com'),
-      http('https://1rpc.io/amoy'),
-    ]),
+    ].filter(Boolean)),
   },
   batch: {
     multicall: true,
