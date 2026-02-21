@@ -1,6 +1,9 @@
 # Logs
 logs
 *.log
+frontend/.env
+backend/.env
+contracts/.env
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
