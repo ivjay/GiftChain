@@ -1,4 +1,7 @@
 # Logs
+frontend/.env
+backend/.env
+contracts/.env
 logs
 *.log
 npm-debug.log*
@@ -6,11 +9,14 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-
-node_modules
+backend/node_modules/
+frontend/node_modules/
+contracts/.env
 dist
 dist-ssr
 *.local
+artifacts/
+cache/
 
 # Editor directories and files
 .vscode/*
