@@ -190,7 +190,9 @@ export function useOnChainGifts() {
 
       } catch (err) {
         console.error('[useOnChainGifts] Fetch Error:', err);
-        if (!cancelled) setError('Failed to load on-chain gifts');
+        if (!cancelled) {
+          setError('Failed to load on-chain gifts. This may be due to RPC connection issues. Please try refreshing or check your connection.');
+        }
       } finally {
         if (!cancelled) setLoading(false);
       }

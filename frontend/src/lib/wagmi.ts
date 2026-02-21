@@ -10,10 +10,13 @@ export const config = createConfig({
   transports: {
     [polygonAmoy.id]: fallback([
       http('https://rpc-amoy.polygon.technology'),
+      http('https://polygon-amoy.drpc.org'),
+      http('https://rpc.ankr.com/polygon_amoy'),
       http('https://polygon-amoy-bor-rpc.publicnode.com'),
-      http('https://amoy.drpc.org'),
       http('https://1rpc.io/amoy'),
-      http('https://polygon-amoy.blockpi.network/v1/rpc/public'),
     ]),
+  },
+  batch: {
+    multicall: true,
   },
 });
